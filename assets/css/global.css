@@ -15,9 +15,9 @@
   --title: #2e384d;
   --red: rgb(232, 63, 91);
   --green: rgb(76, 214, 43);
-  --green-dark: rgb(31, 131, 7);
+  --green-dark: rgb(41, 134, 17);
   --blue: #4CD62B;
-  --blue-dark: #4CD62B;
+  --blue-dark: rgb(41, 134, 17);
   --blue-twitter: #2aa9e0;
 }
 
@@ -62,6 +62,8 @@ a{
 
 .container section.grid{
   flex: 1;
+
+  margin-top: -1.8rem;
 
   display: grid;
   grid-template-columns: 1fr 1fr;

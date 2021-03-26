@@ -9,6 +9,7 @@
 
 .subtract:hover{
   background-color: #b82121;
+  transition: 0.5s;
 }
 
 .add{
@@ -21,6 +22,7 @@
 
 .add:hover{
   background-color: #41ad26;
+  transition: 0.5s;
 }
 
 .section{

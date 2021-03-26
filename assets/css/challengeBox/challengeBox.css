@@ -102,8 +102,14 @@
   color: var(--green);
 }
 
-.challengeActive footer button:hover{
-  filter: brightness(0.9);
+.challengeActive footer button.challengeFailedButton:hover{
+  background: rgba(232, 63, 91, 0.5);
+  transition: 0.5s;
+}
+
+.challengeActive footer button.challengeSucceededButton:hover{
+  background: rgba(76, 214, 43, 0.5);
+  transition: 0.5s;
 }
 
 .hiden{
