@@ -1,4 +1,5 @@
 import { btnDefinirNome, changeName } from './components/profile.js'
+import { iniciar,btnInit } from './components/countdown.js'
 import { 
   addMin, 
   addRes, 
@@ -10,6 +11,8 @@ import {
   subRes } from './components/timeDefinition.js'
 
 btnDefinirNome.addEventListener('click', changeName)
+
+btnInit.addEventListener('click', iniciar)
 
 addMin.addEventListener('click', addMinutes)
 addRes.addEventListener('click', addRest)
