@@ -1,0 +1,59 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal > div {
+  width: 25rem;
+  height: 12rem;
+  position: relative;
+  margin: 15% auto;
+  padding: 35px 35px;
+  background: var(--green);
+  border-radius: 5px;
+}
+
+.modal > div h2{
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.inputName{
+  display: flex;
+}
+
+.name{
+  width: 20rem;
+  height: 3rem;
+  border-radius: 5px 0 0 5px;
+  background: var(--white);
+  border: 0;
+  padding-left: 1rem;
+  color: #B2B9FF;
+}
+
+.btnDefinirNome{
+  height: 3rem;
+  border: 0;
+  background-color: var(--green-dark);
+  border-radius: 0 5px 5px 0;
+  padding: 0.5rem 1rem 0 1rem;
+  line-height: 30px;
+  font-size: 1rem;
+  color: white;
+}
