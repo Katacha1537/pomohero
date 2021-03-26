@@ -21,8 +21,8 @@
     <div>
       <h2>Digite seu nome!</h2>
       <div class="inputName">
-        <input type="text" placeholder="digite seu username" class="name" data-name>
-        <a href="#fechar" title="Fechar" class="btnDefinirNome"><i class="fas fa-arrow-right"></i></a>
+        <input type="text" placeholder="digite seu username" class="name" data-inputName>
+        <a href="#fechar" title="Fechar" class="btnDefinirNome" data-btnDefinirNome><i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
   </div>
@@ -43,7 +43,7 @@
     <section class="part1">
       <section class="profileContainer">
         <div>
-          <a href="#abrirModal"><strong>Clique aqui!</strong></a>
+          <a href="#abrirModal" data-username><strong>Clique aqui!</strong></a>
           <p>
             <img src="./assets/icons/level.svg" alt="level"/>
             Level 1
@@ -115,5 +115,8 @@
     </section>
   </section>
 </section>
+
+<script type="module" src="./assets/js/app.js"></script>
+<script type="module" src="./assets/js/components/profile.js"></script>
 </body>
 </html>
