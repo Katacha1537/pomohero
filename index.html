@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./assets/css/experienceBar/experienceBar.css">
   <link rel="stylesheet" href="./assets/css/profile/profile.css">
   <link rel="stylesheet" href="./assets/css/modal/modal.css">
+  <link rel="stylesheet" href="./assets/css/timeDefinition/timeDefinition.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 <body>
@@ -55,17 +56,34 @@
         <span>Desafio completos</span>
         <span>0</span>
       </section>
+
+      <section class="timeDefinition">
+        <div class="section">
+          <div class="defsection">
+            <p>sessão: </p><p data-minute>25</p><p>m</p>
+          </div>
+          <button data-subMin class="subtract">-</button>
+          <button data-addMin class="add">+</button>
+        </div>
+        <div class="section">
+          <div class="defsection">
+            <p>descanso: </p><p data-rest>5</p><p>m</p>
+          </div>
+          <button data-subRest class="subtract">-</button>
+          <button data-addRest class="add">+</button>
+        </div>
+      </section>
     
       <section>
         <div class=countDownContainer>
           <div class="first">
-            <span>2</span>
-            <span>5</span>
+            <span data-minuteLeft>2</span>
+            <span data-minuteRight>5</span>
           </div>
           <span>:</span>
           <div class="last">
-            <span>0</span>
-            <span>0</span>
+            <span data-secondLeft>0</span>
+            <span data-secondRight>0</span>
           </div>
         </div>
     
@@ -117,6 +135,5 @@
 </section>
 
 <script type="module" src="./assets/js/app.js"></script>
-<script type="module" src="./assets/js/components/profile.js"></script>
 </body>
 </html>

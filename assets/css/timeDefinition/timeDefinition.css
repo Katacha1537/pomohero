@@ -1,0 +1,42 @@
+.subtract{
+  background-color: #D62B2B;
+  border: 0;
+  width: 70px;
+  height: 40px;
+  border-radius: 5px 0 0 5px;
+  margin-right: -5px;
+}
+
+.subtract:hover{
+  background-color: #b82121;
+}
+
+.add{
+  background-color: #4CD62B;
+  border: 0;
+  width: 70px;
+  height: 40px;
+  border-radius: 0 5px 5px 0;
+}
+
+.add:hover{
+  background-color: #41ad26;
+}
+
+.section{
+  margin-bottom: 2rem;
+}
+
+.section p{
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.defsection{
+  display: flex;
+}
+
+.timeDefinition{
+  display: flex;
+  justify-content: space-between;
+}
