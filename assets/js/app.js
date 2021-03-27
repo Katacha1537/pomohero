@@ -9,6 +9,10 @@ import {
   subtractRest,
   subMin,
   subRes } from './components/timeDefinition.js'
+  
+window.onload = function() {
+  Notification.requestPermission()
+};
 
 btnDefinirNome.addEventListener('click', changeName)
 
@@ -18,3 +22,5 @@ addMin.addEventListener('click', addMinutes)
 addRes.addEventListener('click', addRest)
 subMin.addEventListener('click', subtractMinutes)
 subRes.addEventListener('click', subtractRest)
+
+btnFailedButton.addEventListener('click', handleChallengeFailed)

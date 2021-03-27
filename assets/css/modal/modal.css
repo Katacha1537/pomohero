@@ -41,10 +41,10 @@
   width: 20rem;
   height: 3rem;
   border-radius: 5px 0 0 5px;
-  background: var(--white);
+  background: var(--background);
   border: 0;
   padding-left: 1rem;
-  color: #B2B9FF;
+  color: #122222;
 }
 
 .btnDefinirNome{

@@ -14,7 +14,7 @@ let numberMinutes = Number(minutes.innerText)
 let numberRest = Number(rest.innerText)
 
 export function subtractMinutes(){
-  if(numberMinutes > 0){
+  if(numberMinutes >= 2){
     numberMinutes--
     minutes.innerText = numberMinutes
     let [ minLeft, minRight ] = minutes.innerText.padStart(2, '0').split('')

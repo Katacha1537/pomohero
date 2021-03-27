@@ -31,14 +31,14 @@
   <header class="experienceBar">
     <span>0 xp</span>
       <div>
-          <div style= "width: 60%">
-          <span class="currentExperience" style="left:60%">
-            35 xp
+          <div data-expGreen style= "width: 0%">
+          <span data-expNumber class="currentExperience" style="left:0%">
+            0 xp
           </span>
         </div>
       </div>
       
-      <span>600 xp</span>
+      <span data-expGoal>600 xp</span>
   </header>
   <section class="grid">
     <section class="part1">
@@ -60,7 +60,7 @@
       <section class="timeDefinition">
         <div class="section">
           <div class="defsection">
-            <p>sessão: </p><p data-minute>25</p><p>m</p>
+            <p>sessão: </p><p data-minute>4</p><p>m</p>
           </div>
           <button data-subMin class="subtract">-</button>
           <button data-addMin class="add">+</button>
@@ -94,31 +94,30 @@
     <section class="part2">
       <div data-challenge class="challengeBoxContainer hiden">
         <div class="challengeActive">
-          <header>Ganhe 400 px</header>
+          <header data-amount>Ganhe 400 px</header>
     
           <main>
-            <img src="./assets/icons/eye.svg">
+            <img data-type src="./assets/icons/eye.svg">
             <strong>Novo desafio</strong>
-            <p>Desafio descrição</p>
+            <p data-description>Estique seu braço contra o peito e puxe-o utilizando o outro braço por 10 segundos por braço.</p>
           </main>
-    
-          <footer>
-            <button 
-              type='button' 
-              onClick="handleChallengeFailed() "
-              class="challengeFailedButton "
-            >
-                Falhei
-            </button>
-            <button 
-              type='button' 
-              class="challengeSucceededButton"
-              onClick="handleChallengeSucceeded"
-            >
-              Completei
-            </button>
-          </footer>
         </div>
+        <footer>
+          <button 
+            type='button' 
+            data-btnFailedButton
+            class="challengeFailedButton "
+          >
+              Falhei
+          </button>
+          <button 
+            type='button' 
+            data-btnSucceeded
+            class="challengeSucceededButton"
+          >
+            Completei
+          </button>
+        </footer>
       </div>
       
       <div data-waitChallenge class="challengeBoxContainer">
