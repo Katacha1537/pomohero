@@ -55,19 +55,21 @@ a{
   max-width: 992px;
   margin: 0 auto;
   padding: 1rem 1rem;
-
+  
   display: flex;
   flex-direction: column;
 }
 
-.container section.grid{
-  flex: 1;
-
-  margin-top: -1.8rem;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-content: center;
+@media(max-width: 1440px){
+  .container section.grid{
+    flex: 1;
+    
+    margin-top: -1.8rem;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+  }
 }
 .part1{
   padding-right: 1.5rem;
@@ -75,4 +77,23 @@ a{
 }
 .part2{
   padding-left: 1.5rem;
+}
+
+@media(max-width: 768px){
+  .container section.grid{
+    flex: 1;
+    margin-top: -1.8rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+  }
+
+  .part1{
+    padding-right: 0;
+    border: 0;
+  }
+
+  .part2{
+    padding-left: 0;
+  }
 }
