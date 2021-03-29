@@ -1,11 +1,12 @@
 import { appearChallenge } from './challengeBox.js'
 
-export const dataMinuteLeft= document.querySelector('[data-minuteLeft]')
-export const dataMinuteRight= document.querySelector('[data-minuteRight]')
+const subMin = document.querySelector('[data-subMin]')
+const addMin = document.querySelector('[data-addMin]')
 const dataSecondLeft= document.querySelector('[data-secondLeft]')
 const dataSecondRight= document.querySelector('[data-secondRight]')
+export const dataMinuteLeft= document.querySelector('[data-minuteLeft]')
+export const dataMinuteRight= document.querySelector('[data-minuteRight]')
 export const btnInit= document.querySelector('[data-init]')
-const rest = document.querySelector('[data-rest]')
 
 let defenite = false
 let active = false
@@ -22,6 +23,8 @@ export function iniciar(){
   active = true  
   
   btnInit.setAttribute("disabled", "disabled");
+  addMin.setAttribute("disabled", "disabled");
+  subMin.setAttribute("disabled", "disabled");
 }
 
 setInterval(() => {
@@ -76,4 +79,4 @@ setInterval(() => {
       appearChallenge()
     }
   }
-}, 1000)
+}, 1000/350)

@@ -12,18 +12,38 @@
   <link rel="stylesheet" href="./assets/css/experienceBar/experienceBar.css">
   <link rel="stylesheet" href="./assets/css/profile/profile.css">
   <link rel="stylesheet" href="./assets/css/modal/modal.css">
+  <link rel="stylesheet" href="./assets/css/modal/modalNextLevel.css">
   <link rel="stylesheet" href="./assets/css/timeDefinition/timeDefinition.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 <body>
 <section class="container">
 
-  <div id="abrirModal" class="modal">
+  <div data-addName class="modal modalHidden">
     <div>
       <h2>Digite seu nome!</h2>
       <div class="inputName">
         <input type="text" placeholder="digite seu username" class="name" data-inputName>
-        <a href="#fechar" title="Fechar" class="btnDefinirNome" data-btnDefinirNome><i class="fas fa-arrow-right"></i></a>
+        <a href="#" class="btnDefinirNome" data-btnDefinirNome><i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div data-nextLevel class="nextLevelModal nextLevelHidden">
+    <div>
+      <a href="#" class="btnClose" data-btnClose>X</a>
+      <div class="nextGrid">
+        <div class="forNextLevel">
+          <img src="./assets/icons/Union.svg" alt="level">
+          <h2 data-levelInfo></h2>
+          <p>Avancei para </br>o próximo level</p>
+        </div>
+        <div class="details">
+          <h2>DESAFIOS</h2>
+          <p><strong data-challengeComp></strong> completados</p>
+          <h2 class="last">EXPERIÊNCIA</h2>
+          <p><strong data-expTotal></strong> xp</p>
+        </div>
       </div>
     </div>
   </div>
@@ -44,7 +64,7 @@
     <section class="part1">
       <section class="profileContainer">
         <div>
-          <a href="#abrirModal" data-username><strong>Clique aqui!</strong></a>
+          <a href="#a" data-username><strong>Clique aqui!</strong></a>
           <p data-level>
             <img src="./assets/icons/level.svg" alt="level"/>
             Level 1
@@ -60,17 +80,10 @@
       <section class="timeDefinition">
         <div class="section">
           <div class="defsection">
-            <p>sessão: </p><p data-minute>4</p><p>m</p>
+            <p>sessão: </p><p data-minute>25</p><p>m</p>
           </div>
           <button data-subMin class="subtract">-</button>
           <button data-addMin class="add">+</button>
-        </div>
-        <div class="section">
-          <div class="defsection">
-            <p>descanso: </p><p data-rest>5</p><p>m</p>
-          </div>
-          <button data-subRest class="subtract">-</button>
-          <button data-addRest class="add">+</button>
         </div>
       </section>
     

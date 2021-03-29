@@ -1,5 +1,6 @@
-import { btnDefinirNome, changeName } from './components/profile.js'
+import { btnDefinirNome, changeName, userName, appearModalName } from './components/profile.js'
 import { iniciar,btnInit } from './components/countdown.js'
+import { btnClose, closeModalNextLevel } from './components/experienceBar.js'
 import { 
   btnFailedButton, 
   btnSucceeded, 
@@ -7,26 +8,23 @@ import {
   handleChallengeSucceeded } from './components/challengeBox.js'
 import { 
   addMin, 
-  addRes, 
-  addMinutes, 
-  addRest, 
+  addMinutes,
   subtractMinutes,
-  subtractRest,
-  subMin,
-  subRes } from './components/timeDefinition.js'
+  subMin,} from './components/timeDefinition.js'
   
 window.onload = function() {
   Notification.requestPermission()
 };
 
 btnDefinirNome.addEventListener('click', changeName)
+userName.addEventListener('click', appearModalName)
 
 btnInit.addEventListener('click', iniciar)
 
 addMin.addEventListener('click', addMinutes)
-addRes.addEventListener('click', addRest)
 subMin.addEventListener('click', subtractMinutes)
-subRes.addEventListener('click', subtractRest)
 
 btnFailedButton.addEventListener('click', handleChallengeFailed)
 btnSucceeded.addEventListener('click', handleChallengeSucceeded)
+
+btnClose.addEventListener('click', closeModalNextLevel)

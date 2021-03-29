@@ -1,4 +1,5 @@
 .subtract{
+  color: white;
   background-color: #D62B2B;
   border: 0;
   width: 70px;
@@ -13,6 +14,7 @@
 }
 
 .add{
+  color: white;
   background-color: #4CD62B;
   border: 0;
   width: 70px;
